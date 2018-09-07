@@ -53,6 +53,11 @@ app.get('/about',(req, res) => {
             pageTitle:"This is the About Page"
         });
  	});
+app.get('/projects',(req, res) => {
+        res.render('projects.hbs',{
+            pageTitle:"This is the list of projects"
+        });
+ 	});
 app.get('/bad',(req, res) => {
         res.send({errorMessage:'The url requested doesnt exist'});
  		});
